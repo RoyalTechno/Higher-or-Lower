@@ -1,0 +1,106 @@
+body{
+    box-sizing: border-box;
+    top: 5px;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+	background: linear-gradient(to bottom, #9c9ab0, #7a769e, #6761a0);
+    color: white;
+}
+header{
+  padding: 5px;
+  text-align: center;
+  font-size: 25px;
+}
+h1{
+    font-size: xx-large;
+    margin: auto;
+}
+.section-container {
+    display: grid; 
+    overflow: hidden;
+    grid-template-columns: 700px 150px 700px; 
+    gap: 1rem;
+    margin-left: 20px;
+    padding: 10px;
+}
+.footer-container {
+    display: grid; 
+    overflow: hidden;
+    grid-template-columns: 1350px 250px; 
+    gap: 1rem;
+    margin-left: 20px;
+}
+#btn{
+    transform: translateY(30%);
+}
+img{
+    border-radius: 8px;
+}
+img:hover{
+    cursor: pointer;
+}
+#nextSong{
+	animation: fade-in 4s forwards;
+    margin-top: 0%;
+    overflow: hidden;
+}
+#curSong{
+    animation: fade-in 4s forwards;
+    margin-top: 0%;
+}
+@keyframes fade-in {
+    0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+#track1{
+    margin-left: 50px;
+    font-size:larger;
+    color: black;
+    font-weight: bold;
+}
+#track2{
+    margin-left: 50px;
+    font-size:larger;
+    color: black;
+    font-weight: bold;
+}
+#rating{
+    margin-left: 80px;
+    font-size: larger;
+    font-weight: bold;
+    color:rgb(45, 4, 133);
+}
+#upBTN,#downBTN {
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    font-size: 100px;
+    cursor: pointer;
+}
+#upBTN:hover{
+    color: rgb(60, 255, 0);
+}
+#downBTN:hover {
+    color: rgb(255, 0, 0);
+}
+footer {
+    font-size: 30px;
+    padding: 10px;
+}
+#label{
+    text-decoration: underline;
+    text-align: left;
+}
+#score{
+    text-align: left;
+    margin-left: 80px;
+    color: red;
+}
+#highscore{
+    text-align: left;
+    margin-left: 70px;
+    color: yellow;
+}
