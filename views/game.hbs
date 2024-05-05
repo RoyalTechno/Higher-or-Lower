@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+	<title>{{title}}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/game.css">
+</head>
+<body>
+<header>
+    <h1>{{label}}</h1>
+</header>
+<section>
+    <div class="section-container">
+        <a id="link1" href={{link1}} target="_blank">
+            <img id="curSong" src={{img1}}>
+        </a>
+        <div id="btn">
+            <button id='upBTN'>&#9650;</button>
+            <br>
+            <button id='downBTN'>&#9660;</button>
+        </div>
+        <a id="link2" href={{link2}} target="_blank">
+            <img id="nextSong" src={{img2}}>
+        </a>
+    </div>
+    <div class="section-container">
+        <div id='track1'>{{t1}}</div>
+        <div></div>
+        <div id='track2'>{{t2}}</div>
+    </div>
+    <div id='rating'>{{rating}}</div>
+</section>
+<footer>
+    <div class="footer-container">
+        <div id="label">{{scoreLabel}}</div>
+        <div id="label">{{highscoreLabel}}</div>
+    </div>
+    <div class="footer-container">
+        <div id="score">{{scoreNum}}</div>
+        <div id="highscore">{{highscoreNum}}</div>
+    </div>
+</footer>
+    <script src="js/game.js"></script>
+</body>
+</html>
